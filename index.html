@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Ten lindo día, señorita 💙</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #d9efff,
+        #edf5ff,
+        #e8dcff
+    );
+    font-family: Georgia, serif;
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 470px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 30px;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(30,90,160,0.20);
+    animation: aparecer 2s ease;
+}
+
+h1 {
+    color: #15579b;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #648bb6;
+    font-size: 18px;
+}
+
+.flores {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.tulipan {
+    font-size: 75px;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+.tulipan:nth-child(2) {
+    animation-delay: 0.5s;
+    font-size: 95px;
+}
+
+.tulipan:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.mensaje {
+    font-size: 21px;
+    color: #315f99;
+    line-height: 1.6;
+}
+
+.corazon {
+    color: #559ce5;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="tarjeta">
+
+    <h1>Ten lindo día, señorita</h1>
+
+    <p class="subtitulo">
+        Un pequeño detalle para alegrar tu día...
+    </p>
+
+    <div class="flores">
+        <span class="tulipan">🌷</span>
+        <span class="tulipan">🌷</span>
+        <span class="tulipan">🌷</span>
+    </div>
+
+    <p class="mensaje">
+        Espero que hoy tengas un día
+        lleno de sonrisas, momentos bonitos
+        y muchas razones para ser feliz.
+    </p>
+
+    <p class="mensaje">
+        Nunca olvides lo especial que eres. 💙
+    </p>
+
+    <div class="corazon">
+        ♡ Con mucho cariño ♡
+    </div>
+
+</div>
+
+</body>
+</html>
